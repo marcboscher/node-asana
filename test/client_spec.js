@@ -11,7 +11,9 @@ describe('Client', function() {
       var apiKey = 'apiKey';
       var authValue = {
         user: apiKey,
-        pass: ''
+        pass: '',
+        username: apiKey,
+        password: '',
       };
       var client = Client.basicAuth(apiKey);
       var dispatcher = new Dispatcher('auth', authValue);
